@@ -4,7 +4,7 @@
   "description": "do not disturb me",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "wdio wdio.conf.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/AlexWork93/WebdriverIO_learning#readme",
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/register": "^7.16.5",
     "@wdio/cli": "^7.16.12",
     "@wdio/local-runner": "^7.16.12",
     "@wdio/mocha-framework": "^7.16.11",

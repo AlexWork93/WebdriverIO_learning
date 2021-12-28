@@ -20,8 +20,9 @@ exports.config = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
+    runner: 'local',
     specs: [
-        './test/specs/**/*.js'
+        './test/**.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -133,7 +134,7 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec'],
-
+    port: 4444,
 
     
     //
@@ -141,7 +142,8 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 60000,
+        require: ['@babel/register']
     },
     //
     // =====
